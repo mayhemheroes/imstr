@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-from-utf8
+
+cmds:
+    - cmd: /fuzz_from_utf8

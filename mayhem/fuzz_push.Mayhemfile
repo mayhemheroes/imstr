@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-push
+
+cmds:
+    - cmd: /fuzz_push

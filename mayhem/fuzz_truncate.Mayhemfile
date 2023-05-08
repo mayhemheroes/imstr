@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-truncate
+
+cmds:
+    - cmd: /fuzz_truncate
