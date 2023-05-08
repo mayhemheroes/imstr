@@ -1,0 +1,44 @@
+[package]
+name = "imstr-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+
+[dependencies.imstr]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+# Create a binary for each fuzz target
+[[bin]]
+name = "fuzz_push"
+path = "fuzz_targets/fuzz_push.rs"
+
+[[bin]]
+name = "fuzz_insert"
+path = "fuzz_targets/fuzz_insert.rs"
+
+[[bin]]
+name = "fuzz_truncate"
+path = "fuzz_targets/fuzz_truncate.rs"
+
+[[bin]]
+name = "fuzz_lines"
+path = "fuzz_targets/fuzz_lines.rs"
+
+[[bin]]
+name = "fuzz_split_off"
+path = "fuzz_targets/fuzz_split_off.rs"
+
+[[bin]]
+name = "fuzz_from_utf8"
+path = "fuzz_targets/fuzz_from_utf8.rs"
