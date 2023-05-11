@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-lines
+
+cmds:
+    - cmd: /fuzz_lines

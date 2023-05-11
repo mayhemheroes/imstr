@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-split-off
+
+cmds:
+    - cmd: /fuzz_split_off

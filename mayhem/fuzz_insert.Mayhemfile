@@ -1,0 +1,5 @@
+project: imstr
+target: fuzz-insert
+
+cmds:
+    - cmd: /fuzz_insert
